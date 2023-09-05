@@ -7,4 +7,3 @@ for i in range(2, number):
     else:
         print("Luku on alkuluku")
         break
-        #jako omalla luvullaan?
