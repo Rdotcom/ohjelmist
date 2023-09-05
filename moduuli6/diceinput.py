@@ -8,5 +8,4 @@ def dices():
         if dice == dicenumber:
             return f"Sait {dicenumber}!"
 
-if __name__ == "__main__":
-    print(dices())
+print(dices())

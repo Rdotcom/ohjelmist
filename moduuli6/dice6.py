@@ -7,5 +7,4 @@ def throw_dice():
         if dice == 6:
             return "Sait kuutosen!"
 
-if __name__ == "__main__":
-    print(throw_dice())
+print(throw_dice())
