@@ -3,8 +3,6 @@ class Car:
         self.plate = plate
         self.maxspeed = maxspeed
         self.distance = 0
-        self.speed = maxspeed
-
 
     def Drive(self, time):
         self.distance += self.maxspeed * time
