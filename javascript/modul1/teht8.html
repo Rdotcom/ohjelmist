@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 8</title>
+</head>
+<body>
+<script>
+    'use strict';
+    const start = parseInt(prompt("Give a starting year:"));
+    const end = parseInt(prompt("Give an ending year:"));
+if (isNaN(start) || isNaN(end) || start > end) {
+  document.write("Invalid input. Please enter valid years.");
+} else {
+  document.write("<ul>");
+    for (let year = start; year <= end; year++) {
+        if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
+        document.write("<li>"+ year + "</li>");
+        }
+    }
+    document.write("</ul>");
+}
+</script>
+</body>
+</html>
