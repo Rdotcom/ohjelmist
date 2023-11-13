@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 4</title>
+</head>
+<body>
+<script>
+    'use strict';
+    const randomnumber = Math.floor(Math.random() * 4) + 1;
+    const studentname = prompt('Enter your name:');
+
+    let house;
+    if (randomnumber === 1) {
+      house = 'Gryffindor';
+    } else if (randomnumber === 2) {
+      house = 'Hufflepuff';
+    } else if (randomnumber === 3) {
+      house = 'Ravenclaw';
+    } else if (randomnumber === 4) {
+      house = 'Slytherin';
+    }
+    if (studentname) {
+      document.write(studentname + ', you are in ' + house + '!');
+    } else {
+      document.write("Hat needs a student's name!");
+    }
+</script>
+</body>
+</html>
