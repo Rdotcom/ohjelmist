@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 7</title>
+</head>
+<body>
+<script>
+    'use strict';
+    const throws = parseInt(prompt("How many times throw the dice?"));
+    let total = 0
+    if (isNaN(throws) || throws < 1) {
+        document.write("Invalid input. Please enter a valid number.");
+    } else {
+    for (let i = 0; i < throws; i++) {
+        const dice = Math.floor(Math.random() * 6) + 1;
+        total += dice;
+    }
+    document.write("The total is " + total);
+}
+</script>
+</body>
+</html>
