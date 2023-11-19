@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 3</title>
+</head>
+<body>
+<script>
+    'use strict';
+    let dogs = [];
+    for (let i=0;i<6;i++) {
+        let input = prompt('Enter the name of dog ' + (i+1) + ':');
+        dogs.push(input);
+    }
+    dogs.sort()
+    dogs.reverse()
+
+    document.write('<p>Dogs in reverse order:</p><ul>');
+    for (let i=0;i<dogs.length;i++) {
+        document.write('<li>' + dogs[i] + '</li>');
+    }
+    document.write('</ul>')
+</script>
+</body>
+</html>

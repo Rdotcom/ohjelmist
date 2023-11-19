@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 5</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let numbers = [];
+  let input;
+
+  while (true) {
+    input = Number(prompt("Enter a number (same number twice to stop):"));
+
+    if (!isNaN(input)) {
+      if (numbers.includes(input)) {
+        console.log("Number is already entered. Stopping.");
+        break;
+      } else {
+        numbers.push(input);
+      }
+    } else {
+      console.log("Invalid input.");
+    }
+  }
+  numbers.sort((a, b) => a - b);
+  console.log("Numbers in ascending order:");
+  for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+  }
+</script>
+
+</body>
+</html>

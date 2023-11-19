@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 9</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  function even(numberarray) {
+    let evenarray = [];
+    for (let i = 0; i < numberarray.length; i++) {
+      if (numberarray[i] % 2 === 0) {
+        evenarray.push(numberarray[i]);
+      }
+    }
+    console.log('First array:', numberarray);
+    return evenarray;
+  }
+
+  const numbersarray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const resultarray = even(numbersarray);
+  console.log("Even array:", resultarray);
+</script>
+</body>
+</html>

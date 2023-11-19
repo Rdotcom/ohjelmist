@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 2</title>
+</head>
+<body>
+<script>
+  'use script';
+  let participants = [];
+  const number = parseInt(prompt('Enter the number of participants:'));
+  for (let i = 0; i < number; i++) {
+    let input = prompt('Enter the name of participant ' + (i + 1) + ':');
+    participants.push(input);
+  }
+  participants.sort();
+
+  document.write('<p>Participants:</p><ol>');
+  for (let i = 0; i < participants.length; i++) {
+    document.write('<li>' + participants[i] + '</li>');
+  }
+  document.write('</ol>');
+</script>
+</body>
+</html>

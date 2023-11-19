@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 6</title>
+</head>
+<body>
+<script>
+    'use strict';
+    function rolldice() {
+        return Math.floor(Math.random() * 6) + 1;
+    }
+    function main() {
+      let rolls = [];
+      let result;
+      do {
+        result = rolldice();
+        rolls.push(result);
+      } while (result !== 6);
+      console.log("Results of each roll:")
+      document.write("<ul>");
+      for (let i = 0; i < rolls.length; i++) {
+        console.log(rolls[i]);
+        document.write("<li>" + rolls[i] + "</li>");
+      }
+      document.write("</ul>");
+    }
+    main()
+</script>
+</body>
+</html>

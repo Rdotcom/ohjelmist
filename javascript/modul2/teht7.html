@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 7</title>
+</head>
+<body>
+<script>
+    'use strict';
+    function rolldice(sides) {
+        return Math.floor(Math.random() * sides) + 1;
+    }
+    function main() {
+      let rolls = [];
+      let result;
+      const sides = Number(prompt("How many sides in the dice?"));
+      do {
+        result = rolldice(sides);
+        rolls.push(result);
+      } while (result !== sides);
+      console.log("Results of each roll:")
+      document.write("<ul>");
+      for (let i = 0; i < rolls.length; i++) {
+        console.log(rolls[i]);
+        document.write("<li>" + rolls[i] + "</li>");
+      }
+      document.write("</ul>");
+    }
+    main()
+</script>
+</body>
+</html>

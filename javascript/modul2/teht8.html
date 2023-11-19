@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 8</title>
+</head>
+<body>
+<script>
+    'use strict';
+    function concat(strArray) {
+      let result = "";
+      for (let i=0; i<strArray.length; i++) {
+        result += strArray[i];
+      }
+      return result;
+    }
+    const namesarray = ["Hello", "world", "Hello", "world"];
+
+    const resultstr = concat(namesarray);
+    document.write("<p>Array: " + resultstr + "</p>");
+</script>
+</body>
+</html>

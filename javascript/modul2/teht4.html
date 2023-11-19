@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tehtävä 4</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let numbers = [];
+  let input;
+  do {
+    input = parseInt(prompt('Enter a number (0 to stop):'));
+    let number = parseFloat(input);
+    if (!isNaN(number)) {
+    numbers.push(input);
+  } else {
+      console.log('Invalid input.')
+    }
+  } while (input !== 0);
+  numbers.pop()
+  numbers.sort(function(a,b) {
+    return b-a;
+    });
+    console.log('Numbers from largest to smallest:')
+  for (let i=0; i<numbers.length; i++) {
+    console.log(numbers[i]);
+  }
+</script>
+</body>
+</html>
