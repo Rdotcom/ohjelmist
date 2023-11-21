@@ -1,0 +1,6 @@
+.my-item {
+  background-color: rgb(225, 175, 175);
+}
+#target li.my-item:nth-child(2) {
+  background-color: rgb(175, 225, 175);
+}
